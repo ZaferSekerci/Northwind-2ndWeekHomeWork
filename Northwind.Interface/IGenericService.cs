@@ -14,7 +14,7 @@ namespace Northwind.Interface
         List<TDto> GetAll(Expression<Func<T, bool>> expression);
         TDto Find(int id);
         IQueryable<TDto> GetIQueryable();
-        TDto Add(TDto model);
+        IResponse<TDto> Add(TDto item);
         Task<TDto> AddAsync(TDto model);
         TDto Update(TDto model);
         Task<TDto> UpdateAsync(TDto model);
@@ -23,6 +23,6 @@ namespace Northwind.Interface
         bool Delete(TDto model);
         Task<bool> DeleteAsync(TDto model);
 
-
+        void Save();
     }
 }
