@@ -21,6 +21,7 @@ namespace Northwind.WebApi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    //deneme commit
                 });
     }
 }
